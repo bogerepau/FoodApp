@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS "users" (
+    id SERIAL,
+    name VARCHAR(25) NOT NULL,
+    email VARCHAR(25) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    is_admin BOOLEAN NOT NULL DEFAULT FALSE
+);
